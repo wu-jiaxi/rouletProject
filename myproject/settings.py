@@ -131,6 +131,16 @@ CORS_ALLOWED_ORIGINS = [
     # Frontend domain or IP addresses you want to allow cross-origin requests from
     'http://localhost:5173',  # Example: React development server
     'https://your.production.domain',  # Example: Your live frontend domain
+    
 ]
 
 CORS_ALLOW_CREDENTIALS = True
+
+ALLOWED_HOSTS = ['54.159.203.127', 'ec2-54-159-203-127.compute-1.amazonaws.com']
+
+
+INSTALLED_APPS = [
+    ...
+    'rest_framework',
+    ...
+]

@@ -140,7 +140,6 @@ ALLOWED_HOSTS = ['54.159.203.127', 'ec2-54-159-203-127.compute-1.amazonaws.com']
 
 
 INSTALLED_APPS = [
-    ...
     'rest_framework',
-    ...
+    'corsheaders',
 ]

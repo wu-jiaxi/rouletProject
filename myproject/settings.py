@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-1=c*7+6ig3+1fgyahop)myl^(8*v^8d(tso2tnj&l0g=+_bahy
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['54.159.203.127', 'ec2-54-159-203-127.compute-1.amazonaws.com', 'www.ec2-54-159-203-127.compute-1.amazonaws.com']
 
 
 # Application definition
@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'corsheaders',
-    'myapp',
+    'myapp'
 ]
 
 MIDDLEWARE = [
@@ -51,7 +51,6 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'corsheaders.middleware.CorsMiddleware',
-        'corsheaders.middleware.CorsMiddleware',
 ]
 
 ROOT_URLCONF = 'myproject.urls'
@@ -122,8 +121,6 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-# Default primary key field type
-# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
@@ -132,28 +129,11 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# Allow Cors
+# Allow CORS
 CORS_ALLOWED_ORIGINS = [
-    # Frontend domain or IP addresses you want to allow cross-origin requests from
-    'http://localhost:5173',  # Example: React development server
-    'ec2-54-159-203-127.compute-1.amazonaws.com',
-    "http://roulet-take-home-app.s3-website-us-east-1.amazonaws.com/form"  # Example: Your live frontend domain
-    
+    "http://localhost:5173",  # Example: React development server
+    "http://ec2-54-159-203-127.compute-1.amazonaws.com",
+    "http://roulet-take-home-app.s3-website-us-east-1.amazonaws.com"
 ]
 
 CORS_ALLOW_CREDENTIALS = True
-
-ALLOWED_HOSTS = ['54.159.203.127', 'ec2-54-159-203-127.compute-1.amazonaws.com', 'www.ec2-54-159-203-127.compute-1.amazonaws.com']
-
-
-INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'rest_framework',
-    'corsheaders',
-    'myapp'
-]

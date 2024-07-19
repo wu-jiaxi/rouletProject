@@ -135,7 +135,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ALLOWED_ORIGINS = [
     # Frontend domain or IP addresses you want to allow cross-origin requests from
     'http://localhost:5173',  # Example: React development server
-    'ec2-54-159-203-127.compute-1.amazonaws.com',  # Example: Your live frontend domain
+    'ec2-54-159-203-127.compute-1.amazonaws.com',
+    "http://roulet-take-home-app.s3-website-us-east-1.amazonaws.com/form"  # Example: Your live frontend domain
     
 ]
 

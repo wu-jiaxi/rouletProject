@@ -141,7 +141,7 @@ CORS_ALLOWED_ORIGINS = [
 
 CORS_ALLOW_CREDENTIALS = True
 
-ALLOWED_HOSTS = ['54.159.203.127', 'ec2-54-159-203-127.compute-1.amazonaws.com']
+ALLOWED_HOSTS = ['54.159.203.127', 'ec2-54-159-203-127.compute-1.amazonaws.com', 'www.ec2-54-159-203-127.compute-1.amazonaws.com']
 
 
 INSTALLED_APPS = [
